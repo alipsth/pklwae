@@ -199,7 +199,7 @@
 										<div class="d-flex">
 											<div class="text-white">
                       <p class="text-white mb-0"><b>Total Positif Dunia</b></p>
-                      <h2 class="mb-0 number-font"><?php echo $posglobal['value'] ?></h2>
+                      <h2 class="mb-0 number-font"></h2>
 												<p class="text-white mb-0">ORANG</p>
 											</div>
 											<div class="ml-auto"> <img src="../uploads/emoji-LWx.png" alt="Positif" width="50" height="50"> </div>

@@ -33,7 +33,7 @@ class FrontendController extends Controller
             ->join('trackings','rws.id','=','trackings.id_rw')
             ->sum('trackings.meninggal');
         // $global = file_get_contents('https://api.kawalcorona.com/positif');
-        $posglobal = json_decode($global, TRUE);
+        // $posglobal = json_decode($global, TRUE);
 
         // Date
         $tanggal = Carbon::now()->format('D d-M-Y');
