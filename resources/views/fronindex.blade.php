@@ -197,6 +197,38 @@
             <h6><p>Update terakhir : {{ $tanggal }}</p></h6>
         </div>
 						</div>
+
+            <!-- Global  -->
+         <section id="global" class="global">
+                <div class="global">
+                    <div class="container_width">
+                    <div class="card">
+                        <div class="container my-4">                      
+                                <div class="card-header ">
+                                        </div>
+                                        <div class="card-body" >
+                                            <h1 class="text-center mb-4">Data Kasus Corona virus di Dunia</h1>
+                                            <div style="height:600px;overflow:auto;margin-right:15px;">
+                                            <table class="table table-striped table-bordered data">
+                                                    <thead class="text-white">
+                                                        <tr>
+                                                        <th scope="col">No</th>
+                                                        <th scope="col">Negara</th>
+                                                        <th scope="col">Positif</th>
+                                                        <th scope="col">Sembuh</th>
+                                                        <th scope="col">Meninggal</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                
+
+                                                    </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                       </div>
+                                  </section> 
+                            <!-- end global -->
         
 
                 <!-- Indonesia -->
