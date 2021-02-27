@@ -19,6 +19,7 @@
 		<div class="main-agileinfo">
 			<div class="agileits-top">
             <form action="{{route('register')}}" method="post" >
+			@csrf
 					<input class="text" type="text" name="name" placeholder="Username" required="">
 					<input class="text email" type="email" name="email" placeholder="Email" required="">
                     @error('email')
