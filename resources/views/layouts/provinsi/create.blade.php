@@ -25,8 +25,8 @@
                       <div class="form-group">
                     <div class="mb-12>
                         <label for="exampleInputPassword1" class="form-label">Provinsi</label>
-                        <input type="text" class="form-control @error('nm_prov') is-invalid @enderror" id="exampleInputPassword1" name="nm_prov">
-                        @error ('nm_prov')
+                        <input type="text" class="form-control @error('nama_provinsi') is-invalid @enderror" id="exampleInputPassword1" name="nama_provinsi">
+                        @error ('nama_provinsi')
                         <span class="invalid-feedback" role="alert">
                         <strong>{{$message}}</strong>
                         </span>
