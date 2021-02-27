@@ -32,7 +32,7 @@ class FrontendController extends Controller
             'trackings.sembuh','trackings.meninggal')
             ->join('trackings','rws.id','=','trackings.id_rw')
             ->sum('trackings.meninggal');
-        $global = file_get_contents('https://api.kawalcorona.com/positif');
+        // $global = file_get_contents('https://api.kawalcorona.com/positif');
         $posglobal = json_decode($global, TRUE);
 
         // Date
