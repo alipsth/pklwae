@@ -53,8 +53,8 @@ class FrontendController extends Controller
                   ->get();
 
         // Table Dunia
-        $datadunia= file_get_contents("https://api.kawalcorona.com/");
-        $dunia = json_decode($datadunia, TRUE);
+        // $datadunia= file_get_contents("https://api.kawalcorona.com/");
+        // $dunia = json_decode($datadunia, TRUE);
             
         return view('fronindex',compact('positif','sembuh','meninggal','posglobal', 'tanggal','tampil','dunia'));
     }
