@@ -212,7 +212,7 @@
         </div>
 						</div>
         <!-- Global  -->
-        <section id="global" class="global">
+        <!-- <section id="global" class="global">
                 <div class="global">
                     <div class="container_width">
                     <div class="card">
@@ -252,7 +252,7 @@
                                                 </div>
                                             </div>
                                        </div>
-                                  </section>
+                                  </section> -->
                             <!-- end global -->
 
                 <!-- Indonesia -->
