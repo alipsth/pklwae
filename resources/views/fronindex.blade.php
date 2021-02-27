@@ -151,7 +151,7 @@
       <!-- End sliders -->
     </header><br>
     <div class="row">
-							<div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+							<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
 								<div class="card bg-info img-card box-primary-shadow">
 									<div class="card-body">
 										<div class="d-flex">
@@ -160,12 +160,12 @@
 												<h2 class="mb-0 number-font">{{$positif}}</h2>
 												<p class="text-white mb-0">ORANG</p>
 											</div>
-											<div class="ml-auto"> <img src="../uploads/sad-u6e.png" alt="Positif" width="50" height="50"> </div>
+											<div class="ml-auto"> <i class="icofont-sad icofont-5x" ></i> </div>
 										</div>
 									</div>
 								</div>
 							</div><!-- COL END -->
-							<div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+							<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
 								<div class="card bg-success img-card box-secondary-shadow">
 									<div class="card-body">
 										<div class="d-flex">
@@ -174,12 +174,12 @@
 												<h2 class="mb-0 number-font">{{$sembuh}}</h2>
 												<p class="text-white mb-0">ORANG</p>
 											</div>
-											<div class="ml-auto"> <img src="../uploads/happy-ipM.png" alt="Positif" width="50" height="50"> </div>
+											<div class="ml-auto"> <i class="icofont-heart icofont-5x"></i> </div>
 										</div>
 									</div>
 								</div>
 							</div><!-- COL END -->
-							<div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+							<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
 								<div class="card  bg-danger img-card box-success-shadow">
 									<div class="card-body">
 										<div class="d-flex">
@@ -188,25 +188,11 @@
                       <h2 class="mb-0 number-font">{{$meninggal}}</h2>
 												<p class="text-white mb-0">ORANG</p>
 											</div>
-											<div class="ml-auto"> <img src="../uploads/emoji-LWx.png" alt="Positif" width="50" height="50"> </div>
+											<div class="ml-auto"> <i class="icofont-confounded icofont-5x"></i> </div>
 										</div>
 									</div>
 								</div>
-							</div><!-- COL END -->
-							<div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-								<div class="card  bg-info img-card box-success-shadow">
-									<div class="card-body">
-										<div class="d-flex">
-											<div class="text-white">
-                      <p class="text-white mb-0"><b>Total Positif Dunia</b></p>
-                      <h2 class="mb-0 number-font"></h2>
-												<p class="text-white mb-0">ORANG</p>
-											</div>
-											<div class="ml-auto"> <img src="../uploads/emoji-LWx.png" alt="Positif" width="50" height="50"> </div>
-										</div>
-									</div>
-								</div>
-							</div><!-- COL END -->
+							</div>
 							<div class="col text-center">
             <h6><p>Update terakhir : {{ $tanggal }}</p></h6>
         </div>
