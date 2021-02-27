@@ -56,6 +56,6 @@ class FrontendController extends Controller
         // $datadunia= file_get_contents("https://api.kawalcorona.com/");
         // $dunia = json_decode($datadunia, TRUE);
             
-        return view('fronindex',compact('positif','sembuh','meninggal','posglobal', 'tanggal','tampil','dunia'));
+        return view('fronindex',compact('positif','sembuh','meninggal', 'tanggal','tampil'));
     }
 }
