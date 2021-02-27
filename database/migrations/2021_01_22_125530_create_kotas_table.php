@@ -18,7 +18,7 @@ class CreateKotasTable extends Migration
             $table->bigInteger('id_provinsi')->unsigned();
             $table->foreign('id_provinsi')->references('id')
             ->on('provinsis')->onDelete('cascade');
-            $table->string('kode_kota');
+            $table->integer('kode_kota');
             $table->string('nama_kota');
             $table->timestamps();
         });
