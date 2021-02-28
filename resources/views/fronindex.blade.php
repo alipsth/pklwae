@@ -66,14 +66,8 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#team">
-                  Team
-                </a>
-              </li>
-
-              <li class="nav-item">
                 <a class="nav-link" href="#about">
-                  About
+                  Berita
                 </a>
               </li>
             </ul>
