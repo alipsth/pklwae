@@ -32,8 +32,8 @@ class FrontendController extends Controller
             'trackings.sembuh','trackings.meninggal')
             ->join('trackings','rws.id','=','trackings.id_rw')
             ->sum('trackings.meninggal');
-        // $global = file_get_contents('https://api.kawalcorona.com/positif');
-        // $posglobal = json_decode($global, TRUE);
+        $global = file_get_contents('https://api.kawalcorona.com/positif');
+        $posglobal = json_decode($global, TRUE);
 
         // Date
         $tanggal = Carbon::now()->format('D d-M-Y');
@@ -52,10 +52,10 @@ class FrontendController extends Controller
                   ->groupBy('nama_provinsi')->orderBy('nama_provinsi','ASC')
                   ->get();
 
-        // Table Dunia
-        // $datadunia= file_get_contents("https://api.kawalcorona.com/");
-        // $dunia = json_decode($datadunia, TRUE);
+        //Table Dunia
+        $datadunia= file_get_contents("https://api.kawalcorona.com/");
+        $dunia = json_decode($datadunia, TRUE);
             
-        return view('fronindex',compact('positif','sembuh','meninggal', 'tanggal','tampil'));
+        return view('fronindex',compact('positif','sembuh','dunia','meninggal', 'tanggal','tampil','posglobal'));
     }
 }

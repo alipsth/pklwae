@@ -145,7 +145,7 @@
       <!-- End sliders -->
     </header><br>
     <div class="row">
-							<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+							<div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
 								<div class="card bg-info img-card box-primary-shadow">
 									<div class="card-body">
 										<div class="d-flex">
@@ -159,7 +159,7 @@
 									</div>
 								</div>
 							</div><!-- COL END -->
-							<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+							<div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
 								<div class="card bg-success img-card box-secondary-shadow">
 									<div class="card-body">
 										<div class="d-flex">
@@ -173,13 +173,27 @@
 									</div>
 								</div>
 							</div><!-- COL END -->
-							<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+							<div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
 								<div class="card  bg-danger img-card box-success-shadow">
 									<div class="card-body">
 										<div class="d-flex">
 											<div class="text-white">
-                      <p class="text-white mb-0"><b>Jumlah Meninggal Indonesia</b></p>
+                      <p class="text-white mb-0"><b>Jmlh meninggal Indonesia</b></p>
                       <h2 class="mb-0 number-font">{{$meninggal}}</h2>
+												<p class="text-white mb-0">ORANG</p>
+											</div>
+											<div class="ml-auto"> <i class="icofont-confounded icofont-5x"></i> </div>
+										</div>
+									</div>
+								</div>
+							</div>
+              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+								<div class="card  bg-info img-card box-success-shadow">
+									<div class="card-body">
+										<div class="d-flex">
+											<div class="text-white">
+                      <p class="text-white mb-0"><b>Jumlah Kasus Dunia</b></p>
+                      <h2 class="mb-0 number-font"><?php echo $posglobal['value']; ?></h2>
 												<p class="text-white mb-0">ORANG</p>
 											</div>
 											<div class="ml-auto"> <i class="icofont-confounded icofont-5x"></i> </div>
@@ -192,7 +206,7 @@
         </div>
 						</div>
 
-            <!-- Global  -->
+           <!-- Global  -->
          <section id="global" class="global">
                 <div class="global">
                     <div class="container_width">
@@ -215,7 +229,19 @@
                                                     </thead>
                                                     <tbody>
                                 
+                                                    @php
+                                                        $no = 1;    
+                                                    @endphp
 
+                                                    @foreach($dunia as $data)
+                                                    <tr>
+                                                        <td> <?php echo $no++ ?></td>
+                                                        <td> <?php echo $data['attributes']['Country_Region'] ?></td>
+                                                        <td> <?php echo number_format($data['attributes']['Confirmed']) ?></td>
+                                                        <td><?php echo number_format($data['attributes']['Recovered'])?></td>
+                                                        <td><?php echo number_format($data['attributes']['Deaths'])?></td>
+                                                    </tr>
+                                                    @endforeach
                                                     </tbody>
                                                     </table>
                                                 </div>
